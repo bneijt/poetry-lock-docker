@@ -1,0 +1,1 @@
+Example project using [poetry-lock-package](https://pypi.org/project/poetry-lock-package/) to create a docker containing a poetry project without using a virtual environment.
