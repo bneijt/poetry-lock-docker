@@ -4,7 +4,9 @@ WORKDIR /project
 
 COPY dist/*.whl */dist/*.whl /project
 
-RUN pip install --no-cache-dir *.whl \
+RUN --mount=type=secret,id=pip_index_url \
+    PIP_INDEX_URL=$(cat /run/secrets/pip_index_url) \
+    pip install --no-cache-dir *.whl \
     && rm -rf *.whl
 
 EXPOSE 8080
