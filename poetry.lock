@@ -1,0 +1,452 @@
+[[package]]
+name = "atomicwrites"
+version = "1.4.0"
+description = "Atomic file writes."
+category = "dev"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+
+[[package]]
+name = "attrs"
+version = "20.3.0"
+description = "Classes Without Boilerplate"
+category = "dev"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+
+[package.extras]
+dev = ["coverage[toml] (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0)", "six", "zope.interface", "furo", "sphinx", "pre-commit"]
+docs = ["furo", "sphinx", "zope.interface"]
+tests = ["coverage[toml] (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0)", "six", "zope.interface"]
+tests_no_zope = ["coverage[toml] (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0)", "six"]
+
+[[package]]
+name = "cheroot"
+version = "8.5.2"
+description = "Highly-optimized, pure-python HTTP server"
+category = "main"
+optional = false
+python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,>=2.7"
+
+[package.dependencies]
+"jaraco.functools" = "*"
+more-itertools = ">=2.6"
+six = ">=1.11.0"
+
+[package.extras]
+docs = ["sphinx (>=1.8.2)", "jaraco.packaging (>=3.2)", "sphinx-tabs (>=1.1.0)", "docutils", "alabaster", "python-dateutil", "sphinxcontrib-apidoc (>=0.3.0)"]
+testing = ["pytest (>=4.6.6)", "pytest-mock (>=1.11.0)", "pytest-sugar (>=0.9.3)", "pytest-watch (==4.2.0)", "pytest-xdist (>=1.28.0)", "jaraco.text (>=3.1)", "codecov (==2.1.10)", "trustme (>=0.4.0)", "pyopenssl", "requests-unixsocket", "portend", "requests-toolbelt", "jaraco.context", "coverage (==5.3)", "pytest-cov (==2.10.1)", "urllib3 (>=1.25)", "watchdog (<1.0.0)", "futures", "coverage (<5)", "pytest-cov (==2.8.1)", "urllib3 (<1.25)", "colorama (!=0.4.2)", "pytest-forked (>=1.2.0)", "pytest-forked (>=1.1.3)"]
+
+[[package]]
+name = "cherrypy"
+version = "18.6.0"
+description = "Object-Oriented HTTP framework"
+category = "main"
+optional = false
+python-versions = ">=3.5"
+
+[package.dependencies]
+cheroot = ">=8.2.1"
+"jaraco.collections" = "*"
+more-itertools = "*"
+portend = ">=2.1.1"
+pywin32 = {version = "*", markers = "sys_platform == \"win32\""}
+"zc.lockfile" = "*"
+
+[package.extras]
+docs = ["sphinx", "docutils", "alabaster", "rst.linker (>=1.11)", "jaraco.packaging (>=3.2)"]
+json = ["simplejson"]
+memcached_session = ["python-memcached (>=1.58)"]
+routes_dispatcher = ["routes (>=2.3.1)"]
+ssl = ["pyopenssl"]
+testing = ["coverage", "codecov", "objgraph", "pytest (>=5.3.5,<5.4.0)", "pytest-cov", "pytest-sugar", "backports.unittest-mock", "path.py", "requests-toolbelt", "pytest-services (>=2)"]
+xcgi = ["flup"]
+
+[[package]]
+name = "click"
+version = "7.1.2"
+description = "Composable command line interface toolkit"
+category = "dev"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
+
+[[package]]
+name = "colorama"
+version = "0.4.4"
+description = "Cross-platform colored terminal text."
+category = "dev"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
+
+[[package]]
+name = "jaraco.classes"
+version = "3.2.1"
+description = "Utility functions for Python class constructs"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+more-itertools = "*"
+
+[package.extras]
+docs = ["sphinx", "jaraco.packaging (>=8.2)", "rst.linker (>=1.9)"]
+testing = ["pytest (>=3.5,!=3.7.3)", "pytest-checkdocs (>=1.2.3)", "pytest-flake8", "pytest-cov", "pytest-enabler", "pytest-black (>=0.3.7)", "pytest-mypy"]
+
+[[package]]
+name = "jaraco.collections"
+version = "3.3.0"
+description = "Collection objects similar to those in stdlib by jaraco"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+"jaraco.classes" = "*"
+"jaraco.text" = "*"
+
+[package.extras]
+docs = ["sphinx", "jaraco.packaging (>=8.2)", "rst.linker (>=1.9)"]
+testing = ["pytest (>=4.6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-cov", "pytest-enabler (>=1.0.1)", "pytest-black (>=0.3.7)", "pytest-mypy"]
+
+[[package]]
+name = "jaraco.functools"
+version = "3.3.0"
+description = "Functools like those found in stdlib"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+more-itertools = "*"
+
+[package.extras]
+docs = ["sphinx", "jaraco.packaging (>=8.2)", "rst.linker (>=1.9)"]
+testing = ["pytest (>=4.6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-cov", "pytest-enabler (>=1.0.1)", "jaraco.classes", "pytest-black (>=0.3.7)", "pytest-mypy"]
+
+[[package]]
+name = "jaraco.text"
+version = "3.5.0"
+description = "Module for text manipulation"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+"jaraco.functools" = "*"
+
+[package.extras]
+docs = ["sphinx", "jaraco.packaging (>=8.2)", "rst.linker (>=1.9)"]
+testing = ["pytest (>=3.5,!=3.7.3)", "pytest-checkdocs (>=1.2.3)", "pytest-flake8", "pytest-cov", "pytest-enabler", "pytest-black (>=0.3.7)", "pytest-mypy"]
+
+[[package]]
+name = "loguru"
+version = "0.5.3"
+description = "Python logging made (stupidly) simple"
+category = "dev"
+optional = false
+python-versions = ">=3.5"
+
+[package.dependencies]
+colorama = {version = ">=0.3.4", markers = "sys_platform == \"win32\""}
+win32-setctime = {version = ">=1.0.0", markers = "sys_platform == \"win32\""}
+
+[package.extras]
+dev = ["codecov (>=2.0.15)", "colorama (>=0.3.4)", "flake8 (>=3.7.7)", "tox (>=3.9.0)", "tox-travis (>=0.12)", "pytest (>=4.6.2)", "pytest-cov (>=2.7.1)", "Sphinx (>=2.2.1)", "sphinx-autobuild (>=0.7.1)", "sphinx-rtd-theme (>=0.4.3)", "black (>=19.10b0)", "isort (>=5.1.1)"]
+
+[[package]]
+name = "more-itertools"
+version = "8.7.0"
+description = "More routines for operating on iterables, beyond itertools"
+category = "main"
+optional = false
+python-versions = ">=3.5"
+
+[[package]]
+name = "packaging"
+version = "20.9"
+description = "Core utilities for Python packages"
+category = "dev"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+
+[package.dependencies]
+pyparsing = ">=2.0.2"
+
+[[package]]
+name = "pluggy"
+version = "0.13.1"
+description = "plugin and hook calling mechanisms for python"
+category = "dev"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+
+[package.extras]
+dev = ["pre-commit", "tox"]
+
+[[package]]
+name = "poetry-lock-package"
+version = "0.2.0"
+description = "Poetry lock package generator"
+category = "dev"
+optional = false
+python-versions = ">=3.6.1,<4.0.0"
+
+[package.dependencies]
+click = ">=7.1.2,<8.0.0"
+loguru = ">=0.5.3,<0.6.0"
+toml = ">=0.10.2,<0.11.0"
+
+[[package]]
+name = "portend"
+version = "2.7.1"
+description = "TCP port monitoring and discovery"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+tempora = ">=1.8"
+
+[package.extras]
+docs = ["sphinx", "jaraco.packaging (>=8.2)", "rst.linker (>=1.9)"]
+testing = ["pytest (>=3.5,!=3.7.3)", "pytest-checkdocs (>=1.2.3)", "pytest-flake8", "pytest-cov", "pytest-enabler", "pytest-black (>=0.3.7)", "pytest-mypy"]
+
+[[package]]
+name = "py"
+version = "1.10.0"
+description = "library with cross-python path, ini-parsing, io, code, log facilities"
+category = "dev"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+
+[[package]]
+name = "pyparsing"
+version = "2.4.7"
+description = "Python parsing module"
+category = "dev"
+optional = false
+python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
+
+[[package]]
+name = "pytest"
+version = "5.4.3"
+description = "pytest: simple powerful testing with Python"
+category = "dev"
+optional = false
+python-versions = ">=3.5"
+
+[package.dependencies]
+atomicwrites = {version = ">=1.0", markers = "sys_platform == \"win32\""}
+attrs = ">=17.4.0"
+colorama = {version = "*", markers = "sys_platform == \"win32\""}
+more-itertools = ">=4.0.0"
+packaging = "*"
+pluggy = ">=0.12,<1.0"
+py = ">=1.5.0"
+wcwidth = "*"
+
+[package.extras]
+checkqa-mypy = ["mypy (==v0.761)"]
+testing = ["argcomplete", "hypothesis (>=3.56)", "mock", "nose", "requests", "xmlschema"]
+
+[[package]]
+name = "pytz"
+version = "2021.1"
+description = "World timezone definitions, modern and historical"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "pywin32"
+version = "300"
+description = "Python for Window Extensions"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "six"
+version = "1.15.0"
+description = "Python 2 and 3 compatibility utilities"
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
+
+[[package]]
+name = "tempora"
+version = "4.0.2"
+description = "Objects and routines pertaining to date and time (tempora)"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+"jaraco.functools" = ">=1.20"
+pytz = "*"
+
+[package.extras]
+docs = ["sphinx", "jaraco.packaging (>=8.2)", "rst.linker (>=1.9)"]
+testing = ["pytest (>=3.5,!=3.7.3)", "pytest-checkdocs (>=1.2.3)", "pytest-flake8", "pytest-cov", "pytest-enabler", "backports.unittest-mock", "freezegun", "pytest-freezegun", "pytest-black (>=0.3.7)", "pytest-mypy"]
+
+[[package]]
+name = "toml"
+version = "0.10.2"
+description = "Python Library for Tom's Obvious, Minimal Language"
+category = "dev"
+optional = false
+python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
+
+[[package]]
+name = "wcwidth"
+version = "0.2.5"
+description = "Measures the displayed width of unicode strings in a terminal"
+category = "dev"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "win32-setctime"
+version = "1.0.3"
+description = "A small Python utility to set file creation time on Windows"
+category = "dev"
+optional = false
+python-versions = ">=3.5"
+
+[package.extras]
+dev = ["pytest (>=4.6.2)", "black (>=19.3b0)"]
+
+[[package]]
+name = "zc.lockfile"
+version = "2.0"
+description = "Basic inter-process locks"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.extras]
+test = ["zope.testing"]
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.9"
+content-hash = "7d29c1172754767b67ff116ecd9d18f3e109893bd4402b5152f1598a36e3f679"
+
+[metadata.files]
+atomicwrites = [
+    {file = "atomicwrites-1.4.0-py2.py3-none-any.whl", hash = "sha256:6d1784dea7c0c8d4a5172b6c620f40b6e4cbfdf96d783691f2e1302a7b88e197"},
+    {file = "atomicwrites-1.4.0.tar.gz", hash = "sha256:ae70396ad1a434f9c7046fd2dd196fc04b12f9e91ffb859164193be8b6168a7a"},
+]
+attrs = [
+    {file = "attrs-20.3.0-py2.py3-none-any.whl", hash = "sha256:31b2eced602aa8423c2aea9c76a724617ed67cf9513173fd3a4f03e3a929c7e6"},
+    {file = "attrs-20.3.0.tar.gz", hash = "sha256:832aa3cde19744e49938b91fea06d69ecb9e649c93ba974535d08ad92164f700"},
+]
+cheroot = [
+    {file = "cheroot-8.5.2-py2.py3-none-any.whl", hash = "sha256:7ba11294a83468a27be6f06066df8a0f17d954ad05945f28d228aa3f4cd1b03c"},
+    {file = "cheroot-8.5.2.tar.gz", hash = "sha256:f137d03fd5155b1364bea557a7c98168665c239f6c8cedd8f80e81cdfac01567"},
+]
+cherrypy = [
+    {file = "CherryPy-18.6.0-py2.py3-none-any.whl", hash = "sha256:c0a7283f02a384c112a0a18404fd3abd849fc7fd4bec19378067150a2573d2e4"},
+    {file = "CherryPy-18.6.0.tar.gz", hash = "sha256:56608edd831ad00991ae585625e0206ed61cf1a0850e4b2cc48489fb2308c499"},
+]
+click = [
+    {file = "click-7.1.2-py2.py3-none-any.whl", hash = "sha256:dacca89f4bfadd5de3d7489b7c8a566eee0d3676333fbb50030263894c38c0dc"},
+    {file = "click-7.1.2.tar.gz", hash = "sha256:d2b5255c7c6349bc1bd1e59e08cd12acbbd63ce649f2588755783aa94dfb6b1a"},
+]
+colorama = [
+    {file = "colorama-0.4.4-py2.py3-none-any.whl", hash = "sha256:9f47eda37229f68eee03b24b9748937c7dc3868f906e8ba69fbcbdd3bc5dc3e2"},
+    {file = "colorama-0.4.4.tar.gz", hash = "sha256:5941b2b48a20143d2267e95b1c2a7603ce057ee39fd88e7329b0c292aa16869b"},
+]
+"jaraco.classes" = [
+    {file = "jaraco.classes-3.2.1-py3-none-any.whl", hash = "sha256:22ac35313cf4b145bf7b217cc51be2d98a3d2db1c8558a30ca259d9f0b9c0b7d"},
+    {file = "jaraco.classes-3.2.1.tar.gz", hash = "sha256:ed54b728af1937dc16b7236fbaf34ba561ba1ace572b03fffa5486ed363ecf34"},
+]
+"jaraco.collections" = [
+    {file = "jaraco.collections-3.3.0-py3-none-any.whl", hash = "sha256:fa45052d859a7c28aeef846abb5857b525a1b9ec17bd4118b78e43a222c5a2f1"},
+    {file = "jaraco.collections-3.3.0.tar.gz", hash = "sha256:3662267424b55f10bf15b6f5dee6a6e48a2865c0ec50cc7a16040c81c55a98dc"},
+]
+"jaraco.functools" = [
+    {file = "jaraco.functools-3.3.0-py3-none-any.whl", hash = "sha256:7c788376d69cf41da675b186c85366fe9ac23c92a70697c455ef9135c25edf31"},
+    {file = "jaraco.functools-3.3.0.tar.gz", hash = "sha256:bfcf7da71e2a0e980189b0744b59dba6c1dcf66dcd7a30f8a4413e478046b314"},
+]
+"jaraco.text" = [
+    {file = "jaraco.text-3.5.0-py3-none-any.whl", hash = "sha256:b647f2bf912e201bfefd01d691bf5d603a94f2b3f998129e4fea595873a25613"},
+    {file = "jaraco.text-3.5.0.tar.gz", hash = "sha256:f07f1076814a17a98eb915948b9a0dc71b1891c833588066ec1feb04ea4389b1"},
+]
+loguru = [
+    {file = "loguru-0.5.3-py3-none-any.whl", hash = "sha256:f8087ac396b5ee5f67c963b495d615ebbceac2796379599820e324419d53667c"},
+    {file = "loguru-0.5.3.tar.gz", hash = "sha256:b28e72ac7a98be3d28ad28570299a393dfcd32e5e3f6a353dec94675767b6319"},
+]
+more-itertools = [
+    {file = "more-itertools-8.7.0.tar.gz", hash = "sha256:c5d6da9ca3ff65220c3bfd2a8db06d698f05d4d2b9be57e1deb2be5a45019713"},
+    {file = "more_itertools-8.7.0-py3-none-any.whl", hash = "sha256:5652a9ac72209ed7df8d9c15daf4e1aa0e3d2ccd3c87f8265a0673cd9cbc9ced"},
+]
+packaging = [
+    {file = "packaging-20.9-py2.py3-none-any.whl", hash = "sha256:67714da7f7bc052e064859c05c595155bd1ee9f69f76557e21f051443c20947a"},
+    {file = "packaging-20.9.tar.gz", hash = "sha256:5b327ac1320dc863dca72f4514ecc086f31186744b84a230374cc1fd776feae5"},
+]
+pluggy = [
+    {file = "pluggy-0.13.1-py2.py3-none-any.whl", hash = "sha256:966c145cd83c96502c3c3868f50408687b38434af77734af1e9ca461a4081d2d"},
+    {file = "pluggy-0.13.1.tar.gz", hash = "sha256:15b2acde666561e1298d71b523007ed7364de07029219b604cf808bfa1c765b0"},
+]
+poetry-lock-package = [
+    {file = "poetry-lock-package-0.2.0.tar.gz", hash = "sha256:14a6494bae1802f2839558d31e5709abb165f1ebd3561b91a1b79609633aae84"},
+    {file = "poetry_lock_package-0.2.0-py3-none-any.whl", hash = "sha256:040add35957fd3edb1c533fbd00ad4dc6ea051ff4a38133a61a4ab4b1a371d5c"},
+]
+portend = [
+    {file = "portend-2.7.1-py3-none-any.whl", hash = "sha256:add53a9e65d4022885f97de7895da583d0ed57df3eadb0b4d2ada594268cc0e6"},
+    {file = "portend-2.7.1.tar.gz", hash = "sha256:986ed9a278e64a87b5b5f4c21e61c25bebdce9919a92238d9c14c37a7416482b"},
+]
+py = [
+    {file = "py-1.10.0-py2.py3-none-any.whl", hash = "sha256:3b80836aa6d1feeaa108e046da6423ab8f6ceda6468545ae8d02d9d58d18818a"},
+    {file = "py-1.10.0.tar.gz", hash = "sha256:21b81bda15b66ef5e1a777a21c4dcd9c20ad3efd0b3f817e7a809035269e1bd3"},
+]
+pyparsing = [
+    {file = "pyparsing-2.4.7-py2.py3-none-any.whl", hash = "sha256:ef9d7589ef3c200abe66653d3f1ab1033c3c419ae9b9bdb1240a85b024efc88b"},
+    {file = "pyparsing-2.4.7.tar.gz", hash = "sha256:c203ec8783bf771a155b207279b9bccb8dea02d8f0c9e5f8ead507bc3246ecc1"},
+]
+pytest = [
+    {file = "pytest-5.4.3-py3-none-any.whl", hash = "sha256:5c0db86b698e8f170ba4582a492248919255fcd4c79b1ee64ace34301fb589a1"},
+    {file = "pytest-5.4.3.tar.gz", hash = "sha256:7979331bfcba207414f5e1263b5a0f8f521d0f457318836a7355531ed1a4c7d8"},
+]
+pytz = [
+    {file = "pytz-2021.1-py2.py3-none-any.whl", hash = "sha256:eb10ce3e7736052ed3623d49975ce333bcd712c7bb19a58b9e2089d4057d0798"},
+    {file = "pytz-2021.1.tar.gz", hash = "sha256:83a4a90894bf38e243cf052c8b58f381bfe9a7a483f6a9cab140bc7f702ac4da"},
+]
+pywin32 = [
+    {file = "pywin32-300-cp35-cp35m-win32.whl", hash = "sha256:1c204a81daed2089e55d11eefa4826c05e604d27fe2be40b6bf8db7b6a39da63"},
+    {file = "pywin32-300-cp35-cp35m-win_amd64.whl", hash = "sha256:350c5644775736351b77ba68da09a39c760d75d2467ecec37bd3c36a94fbed64"},
+    {file = "pywin32-300-cp36-cp36m-win32.whl", hash = "sha256:a3b4c48c852d4107e8a8ec980b76c94ce596ea66d60f7a697582ea9dce7e0db7"},
+    {file = "pywin32-300-cp36-cp36m-win_amd64.whl", hash = "sha256:27a30b887afbf05a9cbb05e3ffd43104a9b71ce292f64a635389dbad0ed1cd85"},
+    {file = "pywin32-300-cp37-cp37m-win32.whl", hash = "sha256:d7e8c7efc221f10d6400c19c32a031add1c4a58733298c09216f57b4fde110dc"},
+    {file = "pywin32-300-cp37-cp37m-win_amd64.whl", hash = "sha256:8151e4d7a19262d6694162d6da85d99a16f8b908949797fd99c83a0bfaf5807d"},
+    {file = "pywin32-300-cp38-cp38-win32.whl", hash = "sha256:fbb3b1b0fbd0b4fc2a3d1d81fe0783e30062c1abed1d17c32b7879d55858cfae"},
+    {file = "pywin32-300-cp38-cp38-win_amd64.whl", hash = "sha256:60a8fa361091b2eea27f15718f8eb7f9297e8d51b54dbc4f55f3d238093d5190"},
+    {file = "pywin32-300-cp39-cp39-win32.whl", hash = "sha256:638b68eea5cfc8def537e43e9554747f8dee786b090e47ead94bfdafdb0f2f50"},
+    {file = "pywin32-300-cp39-cp39-win_amd64.whl", hash = "sha256:b1609ce9bd5c411b81f941b246d683d6508992093203d4eb7f278f4ed1085c3f"},
+]
+six = [
+    {file = "six-1.15.0-py2.py3-none-any.whl", hash = "sha256:8b74bedcbbbaca38ff6d7491d76f2b06b3592611af620f8426e82dddb04a5ced"},
+    {file = "six-1.15.0.tar.gz", hash = "sha256:30639c035cdb23534cd4aa2dd52c3bf48f06e5f4a941509c8bafd8ce11080259"},
+]
+tempora = [
+    {file = "tempora-4.0.2-py3-none-any.whl", hash = "sha256:d44aec6278b27d34a47471ead01b710351076eb5d61181551158f1613baf6bc8"},
+    {file = "tempora-4.0.2.tar.gz", hash = "sha256:10fdc29bf85fa0df39a230a225bb6d093982fc0825b648a414bbc06bddd79909"},
+]
+toml = [
+    {file = "toml-0.10.2-py2.py3-none-any.whl", hash = "sha256:806143ae5bfb6a3c6e736a764057db0e6a0e05e338b5630894a5f779cabb4f9b"},
+    {file = "toml-0.10.2.tar.gz", hash = "sha256:b3bda1d108d5dd99f4a20d24d9c348e91c4db7ab1b749200bded2f839ccbe68f"},
+]
+wcwidth = [
+    {file = "wcwidth-0.2.5-py2.py3-none-any.whl", hash = "sha256:beb4802a9cebb9144e99086eff703a642a13d6a0052920003a230f3294bbe784"},
+    {file = "wcwidth-0.2.5.tar.gz", hash = "sha256:c4d647b99872929fdb7bdcaa4fbe7f01413ed3d98077df798530e5b04f116c83"},
+]
+win32-setctime = [
+    {file = "win32_setctime-1.0.3-py3-none-any.whl", hash = "sha256:dc925662de0a6eb987f0b01f599c01a8236cb8c62831c22d9cada09ad958243e"},
+    {file = "win32_setctime-1.0.3.tar.gz", hash = "sha256:4e88556c32fdf47f64165a2180ba4552f8bb32c1103a2fafd05723a0bd42bd4b"},
+]
+"zc.lockfile" = [
+    {file = "zc.lockfile-2.0-py2.py3-none-any.whl", hash = "sha256:cc33599b549f0c8a248cb72f3bf32d77712de1ff7ee8814312eb6456b42c015f"},
+    {file = "zc.lockfile-2.0.tar.gz", hash = "sha256:307ad78227e48be260e64896ec8886edc7eae22d8ec53e4d528ab5537a83203b"},
+]
