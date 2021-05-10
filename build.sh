@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 poetry build
-poetry run poetry-lock-package --wheel
+poetry run poetry-lock-package --build
 
 if [ -z "$PIP_INDEX_URL" ];
 then

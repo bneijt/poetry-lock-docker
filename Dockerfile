@@ -2,7 +2,7 @@ FROM python:3-slim
 
 WORKDIR /project
 
-COPY dist/*.whl */dist/*.whl /project
+COPY dist/*.whl /project
 
 RUN --mount=type=secret,id=pip_index_url \
     PIP_INDEX_URL=$(cat /run/secrets/pip_index_url) \

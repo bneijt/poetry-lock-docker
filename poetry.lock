@@ -134,7 +134,7 @@ dev = ["pre-commit", "tox"]
 
 [[package]]
 name = "poetry-lock-package"
-version = "0.2.0"
+version = "0.3.1"
 description = "Poetry lock package generator"
 category = "dev"
 optional = false
@@ -295,7 +295,7 @@ testing = ["coverage (>=5.0.3)", "zope.event", "zope.testing"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "22e6875a8a523c6ff8811069e8a59353b9e0cd7f18d1f211378e46898dea874c"
+content-hash = "e7c97c0ec5758b4649be3767ff2426f1ad7a393622f045a7a9c2f2b9f2ec9982"
 
 [metadata.files]
 atomicwrites = [
@@ -347,8 +347,8 @@ pluggy = [
     {file = "pluggy-0.13.1.tar.gz", hash = "sha256:15b2acde666561e1298d71b523007ed7364de07029219b604cf808bfa1c765b0"},
 ]
 poetry-lock-package = [
-    {file = "poetry-lock-package-0.2.0.tar.gz", hash = "sha256:14a6494bae1802f2839558d31e5709abb165f1ebd3561b91a1b79609633aae84"},
-    {file = "poetry_lock_package-0.2.0-py3-none-any.whl", hash = "sha256:040add35957fd3edb1c533fbd00ad4dc6ea051ff4a38133a61a4ab4b1a371d5c"},
+    {file = "poetry-lock-package-0.3.1.tar.gz", hash = "sha256:05d06d977a16bd2bdd4d297a786ac098d5ea3dad5427dc8a79469c637606c73f"},
+    {file = "poetry_lock_package-0.3.1-py3-none-any.whl", hash = "sha256:85cc38d4c9daa631d58e0162510de1bd2d534c9de67251b0512c8c58742fbbb7"},
 ]
 py = [
     {file = "py-1.10.0-py2.py3-none-any.whl", hash = "sha256:3b80836aa6d1feeaa108e046da6423ab8f6ceda6468545ae8d02d9d58d18818a"},
