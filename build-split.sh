@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 poetry build
-poetry run poetry-lock-package --build --no-parent
+poetry run poetry-lock-package --build --no-root
 
 if [ -z "$PIP_INDEX_URL" ];
 then
