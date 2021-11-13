@@ -1,0 +1,16 @@
+#AWS lambda requires installation into the special folder LAMBDA_TASK_ROOT
+FROM public.ecr.aws/lambda/python:3.8
+ 
+# Create function directory
+WORKDIR /app
+
+COPY dist/*_lock* /app
+RUN  pip3 install --no-cache-dir /app/* --target "${LAMBDA_TASK_ROOT}" \
+    && rm /app/*.whl
+
+# Copy handler function (from the local app directory)
+COPY dist/-*.whl /app
+RUN  pip3 install --no-cache-dir /app/* --target "${LAMBDA_TASK_ROOT}" \
+    && rm /app/*.whl
+
+#Set CMD in deployment configuration
